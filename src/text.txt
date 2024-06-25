@@ -1,0 +1,9 @@
+  const questionObject = {
+        role: "user",
+        parts: [{ text: prompt }],
+      };
+
+      const responseObject = {
+        role: "model",
+        parts: [{ text: msg }],
+      };
