@@ -31,14 +31,11 @@ const Navbar = () => {
   return (
     <div className="flex justify-between px-[5rem] py-[0.7rem] md:py-[1rem] bg-gray-800 fixed top-0 w-[100vw] z-50">
       {/* Logo and Title */}
-      <div>
-        <h1 className="text-[1.7rem] text-white max-[450px]:hidden font-bold">
-          Gpt
-        </h1>
+      <div className=" items-center">
         <img
           src={logo1}
           alt=""
-          className="md:hidden w-[7rem] ml-[-4rem] mt-[-0.2rem] rounded-[50%]"
+          className="w-[7rem] ml-[-4rem] mt-[-0.2rem] md:mt-3 rounded-[50%]"
         />
       </div>
 
@@ -54,19 +51,19 @@ const Navbar = () => {
 
       {/* Navbar links */}
       <ul className="hidden bg-gray-800 max-[450px]:z-10 max-[450px]:p-[1rem] ml-[-4.9rem] md:ml-0 max-[450px]:h-[60vh] max-[450px]:w-[98vw] md:bg-transparent mt-[3.45rem] md:mt-[0rem] navbar md:flex gap-[3rem] pt-[0.5rem] max-[450px]:absolute">
-        <li className="text-white max-[450px]:mb-[0.6rem] py-4 border-b border-t border-gray-500">
+        <li className="text-white max-[450px]:mb-[0.6rem] py-4  max-[450px]:border-b max-[450px]:border-t max-[450px]:border-gray-500">
           <a className="no-underline" href="#about">
             What is ChatGPT
           </a>
         </li>
 
-        <li className="text-white max-[450px]:mb-[0.6rem] py-4 border-b border-gray-500">
+        <li className="text-white max-[450px]:mb-[0.6rem] py-4 max-[450px]:border-b max-[450px]:border-gray-500">
           <a href="#use" className="no-underline ">
             How to use
           </a>
         </li>
 
-        <li className="text-white max-[450px]:mb-[0.6rem] py-4 border-b border-gray-500">
+        <li className="text-white max-[450px]:mb-[0.6rem] py-4 max-[450px]:border-b max-[450px]:border-gray-500">
           <a href="#faq" className="no-underline ">
             FAQ
           </a>

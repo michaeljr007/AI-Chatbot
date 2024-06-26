@@ -76,7 +76,7 @@ const ResponseItem = ({ response }) => {
           return (
             <pre
               key={index}
-              className="response-pre w-[100%] whitespace-pre-wrap break-words leading-7 text-white"
+              className="response-pre font-sans w-[100%] whitespace-pre-wrap break-words leading-7 text-white"
               dangerouslySetInnerHTML={{ __html: formatText(part) }}
             />
           );

@@ -33,8 +33,8 @@ function Chatbot() {
 
     responseList.innerHTML = `
       <li>
-          <div class="bg-zinc-800 p-5 ml-[-0.6rem] rounded-lg">
-            <div class="bg-gray-400 w-[95%] h-[2rem] rounded-lg animate-pulse"></div>
+          <div class="bg-zinc-800 p-5 lg:mr-[20%] ml-[-0.6rem] rounded-lg">
+            <div class="bg-gray-400 w-[99%] h-[2rem] rounded-lg animate-pulse"></div>
           </div>
       </li>
     `;
@@ -94,12 +94,15 @@ function Chatbot() {
           className="w-10 mx-auto mb-12 rounded-full"
         />
         <ul className="space-y-6">
-          <li className="cursor-pointer" onClick={() => setSidebarOpen(false)}>
+          <li
+            className="cursor-pointer mt-[13vh]"
+            onClick={() => setSidebarOpen(false)}
+          >
             <Link to={"/"}>
               <span
                 className={`${darkMode ? "bg-gray-900" : "bg-gray-200"} ${
                   darkMode ? "text-white" : "text-black"
-                } px-[1.7rem] py-[0.6rem] rounded-md`}
+                } px-[1.7rem] py-[0.6rem] rounded-md ml-[23%]`}
               >
                 Home
               </span>
@@ -187,7 +190,7 @@ function Chatbot() {
             onSubmit={handleSubmit}
           >
             <textarea
-              className={`mt-1 w-full md:w-[50%] md:ml-8 lg:ml-[9rem] h-[2.7rem] overflow-scroll pl-4 pt-[0.4rem] border rounded-lg ${
+              className={`mt-1 w-full max-[450px]:ml-[-0.8rem] md:w-[50%] md:ml-8 lg:ml-[9rem] h-[2.7rem] overflow-scroll pl-4 pt-[0.4rem] border rounded-lg ${
                 darkMode
                   ? "bg-gray-700 text-white border-gray-600"
                   : "bg-gray-200 text-black border-gray-400"
